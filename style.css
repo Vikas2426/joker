@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+
+html {
+  font-family: "Montserrat", sans-serif;
+}
+body {
+  margin: 0;
+  height: 100vh;
+  background-color: rgb(114, 104, 250);
+  background-image: url("https://wallpaperaccess.com/full/34921.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: grid;
+  justify-items: center;
+  grid-template-rows: 15% 40% 20%;
+}
+
+button {
+  font-size: 1.5em;
+  color: #fff;
+  margin-top: 10px;
+}
+
+.joke-category {
+  margin-top: 35px;
+  height: 5vh;
+}
+
+.joke-container {
+  width: 80vw;
+  max-width: 500px;
+}
+
+.joke-category,
+.joke-container {
+  background-color: rgb(241, 241, 241);
+  padding: 8px;
+  font-size: 1.5em;
+  color: #333;
+  box-shadow: 0px 0px 20px rgb(124, 124, 124);
+  border-radius: 5px;
+}
+
+.hidden {
+  display: none;
+}
