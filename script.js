@@ -1,9 +1,7 @@
 const jokeContainer = document.querySelector(".joke-container");
 const jokeCategory = document.querySelector(".joke-category");
 const refreshBtn = document.querySelector(".button-primary");
-
-
-
+const footer = document.querySelector("footer");
 
 const url = 'https://sv443.net/jokeapi/v2/joke/Any?blacklistFlags=nsfw&type=single';
 
@@ -26,3 +24,6 @@ const getNewJoke = async () => {
 window.addEventListener('load', getNewJoke);
 
 refreshBtn.addEventListener("click", getNewJoke);
+
+const year = new Date().getFullYear();
+footer.textContent = `Copyright @ Vikas Choubey, ${year}`;
